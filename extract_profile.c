@@ -69,7 +69,7 @@ void *load_file(const char *fname, int elem_size)
 		exit(1);
 	}
 	FILE *f = fopen(fname, "rb");
-	if (fread(array, elem_size, N * N * N, f) < elem_size * N * N * N) {
+	if (fread(array, elem_size, N * N * N, f) < N * N * N) {
 		fprintf(stderr, "fread failed: %s\n", fname);
 		exit(1);
 	}
