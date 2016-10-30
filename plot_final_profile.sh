@@ -1,0 +1,1 @@
+gnuplot -e "set terminal png size 800,600 font 'sans,16'; set xrange [0:410]; set sample 2000; set output 'simul-profile.png'; plot 'final_profile' w l title 'From simulation', -0.863 * cos(0.946*x)/sqrt(1 + 0.91 * cos(0.046*x)) w l lw 2 title 'Fitted profile'"
